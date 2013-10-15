@@ -1,5 +1,29 @@
 git repository: https://github.com/b42576/
 git project branch: https://github.com/b42576/miu-project3/
+git meaningful commit: https://github.com/b42576/miu-project3/commit/5a97ed2b1c6138bd4c38671c1ed851683f406f4c
 git live preview: http://b42576.github.io/miu-project3/index.html
 git live preview bronze: http://b42576.github.io/miu-project3/bronze/index.html
 git live preview gold: http://b42576.github.io/miu-project3/gold/index.html
+
+
+- Building Smarter forms: (10m 13s)
+Accessing form elements
+Preventing a form from being submitted
+Hiding and showing form sections
+- UI Enhancement: (9m 49s)
+CSS and JavaScript
+Removing and applying CSS classes
+Changing inline styles
+- JavaScript Best Practices: (19m 44s)
+Understanding JavaScript style
+Minifying your code
+Using JavaScript code checkers
+- JavaScript Libraries: (22m 24s)
+Introduction to JavaScript libraries
+Linking to multiple JavaScript files
+Introduction to jQuery
+Using a content distribution network to deliver JavaScript files
+- JavaScript and HTML5: (17m 35s)
+JavaScript in HTML5
+Using Modernizr
+Using Strict Mode

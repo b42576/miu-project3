@@ -1,5 +1,5 @@
 /* Kevin Fry - MIU 1310 - Project 3 */
-
+#stores .ui-grid-b div{text-align:center;}    
 body {
     background-color:#CCFFFF; 
     color:#000066; 
