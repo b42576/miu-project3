@@ -27,9 +27,10 @@
             <legend>New Pricebook Item</legend>
             <span>* <em>Denotes a required field</em></span>
                 <br />
+                <div id="error"><span></span></div>
             <div data-role="fieldcontain"><!--data-native-menu="false"-->
-            <label for="location">*Location/Store</label>
-                <select name="location" id="location">
+            <label for="location">*Store</label>
+                <select name="location" id="location" data-native-menu="false">
                     <option data-placeholder="true" value="">Select a store</option>
                     <!--<optgroup label="Stores">-->
                     <option value="Acme">Acme</option>
@@ -41,39 +42,58 @@
                     <!--</optgroup>-->
                 </select>
             </div>
+            <div data-role="fieldcontain"><!--data-native-menu="false"-->
+            <label for="department">*Department</label>
+                <select name="department" id="department" data-native-menu="false">
+                    <option data-placeholder="true" value="">Select a department</option>
+                    <option value="Dairy">Dairy</option>
+                    <option value="Deli">Deli</option>
+                    <option value="Frozen">Frozen</option>
+                    <option value="Grocery">Grocery</option>
+                    <option value="HBA">Health &amp; Beauty</option>
+                    <option value="Meat">Meat</option>
+                    <option value="Produce">Produce</option>
+                    <option value="Seafood">Seafood</option>
+                </select>
+            </div>
             <div data-role="fieldcontain">
             <label for="productBrand">*Product Brand</label>
-                <input type="text" name="productBrand" id="productBrand" minlength="2" placeholder="Brand Name" required />
-                <label for="productBrand" class="formhint">The brand name of the product (<em>ex: Kraft</em>)</label>
+                <input type="text" name="productBrand" id="productBrand" placeholder="Brand" required />
+                <label for="productBrand" class="formhint">(ex. Kraft, EE, Store Brand, Folgers, Sea Select, Fresh)</label>
             </div>
             <div data-role="fieldcontain">
             <label for="productName">*Product Name</label>
-                <input type="text" name="productName" id="productName" required />
+                <input type="text" name="productName" id="productName" placeholder="Product" required />
+                <label for="productName" class="formhint">(ex. Tuna, Mac &amp; Cheese, Pizza, Ground Beef)</label>
             </div>
             <div data-role="fieldcontain">
             <label for="size">Size</label>
-                <input type="text" name="size" id="size">
+                <input type="text" name="size" id="size" placeholder="Size with package type">
+                <label for="size" class="formhint">(ex. 15 flz, 10lb bag, 1 gal)</label>
             </div>
             <div data-role="fieldcontain">
             <label for="productDescription">Product Description</label>
-                <textarea name="productDescription" id="productDescription"></textarea>
+                <textarea name="productDescription" id="productDescription" placeholder="Description"></textarea>
+                <label for="productDescription" class="formhint">For better remembering.</label>
             </div>
             <div data-role="fieldcontain">
             <label for="keywords">Keywords</label>
-                <input type="text" name="keywords" id="keywords" />
+                <input type="text" name="keywords" id="keywords" placeholder="Keywords" />
+                <label for="keywords" class="formhint">How would you ask for this product?</label>
             </div>
             <div data-role="fieldcontain">
             <label for="productRating">*Product Rating</label>
                 <input type="range" name="productRating" value="3" min="1" max="5" id="productRating" />
+                <label for="productRating" class="formhint">Would you purchase this again?</label>
             </div>
             <div data-role="fieldcontain">
             <label for="datePurchased">*Date Purchased</label>
-                <input type="date" name="datePurchased" id="datePurchased" required />
-                
+                <input type="date" name="datePurchased" id="datePurchased" placeholder="2013-10-16" required />
+                <label for="datePurchased" class="formhint">YYYY-MM-DD Year-Month-Day</label>
             </div>
             <div data-role="fieldcontain">
             <label for="price">*Price</label>
-                <input type="text" name="price" id="price" size="6" minlength="3" required />
+                <input type="text" name="price" id="price" size="6" placeholder="4.99" required />
             </div>
             <div data-role="fieldcontain">
                 <label for="taxable">Taxable</label>
